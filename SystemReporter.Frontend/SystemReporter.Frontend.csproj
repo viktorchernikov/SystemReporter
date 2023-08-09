@@ -7,7 +7,7 @@
     <ProjectGuid>{FA16A799-0651-4DF6-951F-F7B2E0656912}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>SystemReporter.Frontend</RootNamespace>
-    <AssemblyName>SystemReporter.Frontend</AssemblyName>
+    <AssemblyName>SystemReporter</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -51,6 +51,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
