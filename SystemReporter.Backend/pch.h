@@ -7,6 +7,9 @@
 #ifndef PCH_H
 #define PCH_H
 
+#define DllExport extern "C" __declspec(dllexport)
+#define DllImport extern "C" __declspec(dllimport)
+
 // w tym miejscu dodaj nagłówki, które mają być wstępnie kompilowane
 #include "framework.h"
 #include "types.h"
