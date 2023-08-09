@@ -3,7 +3,7 @@
 namespace SystemReporter.Frontend.Types
 {
     [StructLayout(LayoutKind.Sequential)]
-    public struct ReportRecent
+    public struct ReportInfo
     {
         [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 128)]
         public string FileName;

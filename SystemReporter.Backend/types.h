@@ -10,7 +10,7 @@ enum ReportType
     Custom
 };
 
-struct ReportRecent
+struct ReportInfo
 {
 	char FileName[128];
     ReportType TemplateType;
