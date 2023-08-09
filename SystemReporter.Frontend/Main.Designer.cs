@@ -30,6 +30,8 @@
         {
             this.FastReport = new System.Windows.Forms.Button();
             this.NewReport = new System.Windows.Forms.Button();
+            this.Filter = new System.Windows.Forms.Button();
+            this.NewFilter = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // FastReport
@@ -40,25 +42,53 @@
             this.FastReport.TabIndex = 0;
             this.FastReport.Text = "Szybki Raport";
             this.FastReport.UseVisualStyleBackColor = true;
+            this.FastReport.Click += new System.EventHandler(this.OnFastReport);
             // 
             // NewReport
             // 
-            this.NewReport.Location = new System.Drawing.Point(144, 12);
+            this.NewReport.Location = new System.Drawing.Point(146, 12);
             this.NewReport.Name = "NewReport";
             this.NewReport.Size = new System.Drawing.Size(128, 37);
             this.NewReport.TabIndex = 1;
-            this.NewReport.Text = "Nowy Raport";
+            this.NewReport.Text = "Utwórz Raport";
             this.NewReport.UseVisualStyleBackColor = true;
+            this.NewReport.Click += new System.EventHandler(this.OnReport);
+            // 
+            // Filter
+            // 
+            this.Filter.Location = new System.Drawing.Point(12, 52);
+            this.Filter.Name = "Filter";
+            this.Filter.Size = new System.Drawing.Size(128, 37);
+            this.Filter.TabIndex = 2;
+            this.Filter.Text = "Filtruj Raport";
+            this.Filter.UseVisualStyleBackColor = true;
+            this.Filter.Click += new System.EventHandler(this.OnFilter);
+            // 
+            // NewFilter
+            // 
+            this.NewFilter.Location = new System.Drawing.Point(146, 52);
+            this.NewFilter.Name = "NewFilter";
+            this.NewFilter.Size = new System.Drawing.Size(128, 37);
+            this.NewFilter.TabIndex = 3;
+            this.NewFilter.Text = "Utwórz Filtr";
+            this.NewFilter.UseVisualStyleBackColor = true;
+            this.NewFilter.Click += new System.EventHandler(this.OnNewFilter);
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 61);
+            this.ClientSize = new System.Drawing.Size(284, 103);
+            this.Controls.Add(this.NewFilter);
+            this.Controls.Add(this.Filter);
             this.Controls.Add(this.NewReport);
             this.Controls.Add(this.FastReport);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Main";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Systemowy Raporter";
             this.ResumeLayout(false);
 
@@ -68,6 +98,8 @@
 
         private System.Windows.Forms.Button FastReport;
         private System.Windows.Forms.Button NewReport;
+        private System.Windows.Forms.Button Filter;
+        private System.Windows.Forms.Button NewFilter;
     }
 }
 

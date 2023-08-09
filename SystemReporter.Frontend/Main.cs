@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
 namespace SystemReporter.Frontend
@@ -14,6 +8,29 @@ namespace SystemReporter.Frontend
         public Main()
         {
             InitializeComponent();
+        }
+
+        private void OnReport(object sender, EventArgs e)
+        {
+            using (ReportWizard rpfWiz = new ReportWizard())
+            {
+                rpfWiz.ShowDialog();
+            }
+        }
+        private void OnFilter(object sender, EventArgs e)
+        {
+            using (FilterWizard fWiz = new FilterWizard())
+            {
+                fWiz.ShowDialog();
+            }
+        }
+        private void OnFastReport(object sender, EventArgs e)
+        {
+
+        }
+        private void OnNewFilter(object sender, EventArgs e)
+        {
+
         }
     }
 }
