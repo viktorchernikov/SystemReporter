@@ -15,5 +15,10 @@ namespace SystemReporter.Frontend
         {
             InitializeComponent();
         }
+
+        private void OnReturn(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

@@ -46,6 +46,7 @@
             this.BackButton.TabIndex = 19;
             this.BackButton.Text = "Wróć";
             this.BackButton.UseVisualStyleBackColor = true;
+            this.BackButton.Click += new System.EventHandler(this.OnReturn);
             // 
             // FilterButton
             // 
