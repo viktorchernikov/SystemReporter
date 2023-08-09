@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
 namespace SystemReporter.Frontend
@@ -24,5 +18,20 @@ namespace SystemReporter.Frontend
         {
             Close();
         }
+
+
+        private void OnSelectTemplate(object sender, EventArgs e)
+        {
+
+        }
+        private void OnSelectFilter(object sender, EventArgs e)
+        {
+
+        }
+        private void OnSelectOutput(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

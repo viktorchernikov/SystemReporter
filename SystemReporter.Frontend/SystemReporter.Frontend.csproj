@@ -63,6 +63,8 @@
     <Compile Include="ReportWizard.Designer.cs">
       <DependentUpon>ReportWizard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Types\ReportRecent.cs" />
+    <Compile Include="Types\ReportType.cs" />
     <EmbeddedResource Include="FilterWizard.resx">
       <DependentUpon>FilterWizard.cs</DependentUpon>
     </EmbeddedResource>

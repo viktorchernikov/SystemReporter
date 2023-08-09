@@ -51,18 +51,23 @@
             // 
             // FileNameInput
             // 
+            this.FileNameInput.CausesValidation = false;
+            this.FileNameInput.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.FileNameInput.Location = new System.Drawing.Point(15, 30);
+            this.FileNameInput.MaxLength = 128;
             this.FileNameInput.Name = "FileNameInput";
             this.FileNameInput.Size = new System.Drawing.Size(257, 20);
             this.FileNameInput.TabIndex = 2;
             // 
             // TemplateSelect
             // 
+            this.TemplateSelect.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.TemplateSelect.FormattingEnabled = true;
             this.TemplateSelect.Location = new System.Drawing.Point(15, 78);
             this.TemplateSelect.Name = "TemplateSelect";
             this.TemplateSelect.Size = new System.Drawing.Size(257, 21);
             this.TemplateSelect.TabIndex = 3;
+            this.TemplateSelect.SelectedIndexChanged += new System.EventHandler(this.OnSelectTemplate);
             // 
             // TemplateLabel
             // 
@@ -84,11 +89,13 @@
             // 
             // FilterSelect
             // 
+            this.FilterSelect.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.FilterSelect.FormattingEnabled = true;
             this.FilterSelect.Location = new System.Drawing.Point(15, 128);
             this.FilterSelect.Name = "FilterSelect";
             this.FilterSelect.Size = new System.Drawing.Size(257, 21);
             this.FilterSelect.TabIndex = 5;
+            this.FilterSelect.SelectedIndexChanged += new System.EventHandler(this.OnSelectFilter);
             // 
             // OutputLabel
             // 
@@ -101,11 +108,13 @@
             // 
             // OutputSelect
             // 
+            this.OutputSelect.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.OutputSelect.FormattingEnabled = true;
             this.OutputSelect.Location = new System.Drawing.Point(15, 177);
             this.OutputSelect.Name = "OutputSelect";
             this.OutputSelect.Size = new System.Drawing.Size(257, 21);
             this.OutputSelect.TabIndex = 7;
+            this.OutputSelect.SelectedIndexChanged += new System.EventHandler(this.OnSelectOutput);
             // 
             // CreateButton
             // 
